@@ -1,0 +1,122 @@
+/* styles/skills.css */
+
+.especialidades {
+    display: flex;
+    padding: 80px 0;
+    flex-direction: column;
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px 10px rgba(19, 230, 8, 0.1);
+}
+
+.especialidades .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+}
+
+.especialidades-box {
+    flex: 1 1 calc(33.333% - 60px);
+    box-sizing: border-box;
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 0px;
+    transition: 0.2s;
+    background-color:rgba(142, 142, 142, 0.08);
+    border: 2px solid rgba(0, 255, 38, 0.35);
+    text-align: start;
+}
+
+.especialidades-box p {
+    color:rgb(198, 255, 200); /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    text-align: start; /* Alinhamento à esquerda */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00FF08;
+}
+
+.especialidades-box h3 {
+    color: #fff; /* Cor do texto */
+    font-size: 28px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte (negrito) */
+    text-transform: uppercase; /* Transforma em maiúsculas - opcional */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    text-shadow: 0 0 10px rgba(0, 255, 8, 0.5); /* Sombra neon verde - opcional */
+    transition: all 0.3s ease; /* Transição suave para efeitos hover */
+}
+
+/* Efeito hover opcional */
+.especialidades-box:hover h3 {
+    color: #00FF08; /* Muda cor ao passar mouse */
+    text-shadow: 0 0 15px rgba(0, 255, 8, 0.8); /* Intensifica sombra neon */
+}
+
+.especialidades h2.titulo {
+    color:rgb(255, 255, 255); /* Corrigindo para branco como estava */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.especialidades h2.titulo span {
+    color:#00FF08; /* Corrigindo para branco como estava */
+}
+
+/* Ícones - Mantendo exatamente como estava */
+.especialidades .java-icon {
+    color: #007396;
+    font-size: 70px;
+}
+
+.especialidades .js-icon {
+    color: #F7DF1E;
+    font-size: 70px;
+}
+
+.especialidades .typescript-icon {
+    color: #007ACC;
+    width: 65px;
+}
+
+.especialidades .spring-icon {
+    color: #6DB33F;
+    width: 65px;
+}
+
+.especialidades .node-icon {
+    color: #83CD29;
+    font-size: 70px;
+}
+
+.especialidades .react-icon {
+    color: #61DAFB;
+    font-size: 70px;
+}
+
+.especialidades .aws-icon {
+    color: #FF9900;
+    font-size: 70px;
+}
+
+.especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+    color: #fff; /* Corrigindo para branco como estava */
+}
+
+/* Responsividade igual ao original */
+@media (max-width: 768px) {
+    .especialidades-box {
+        flex: 1 1 calc(50% - 60px);
+    }
+}
+
+@media (max-width: 480px) {
+    .especialidades-box {
+        flex: 1 1 100%;
+    }
+}

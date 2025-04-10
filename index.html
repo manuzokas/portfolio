@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuella's Portfolio</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ícones -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/skills.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="interface">
+        <div class="header-content">
+          <div class="logoheader">
+            <a href="#">
+              <img
+                src="./img/logoficial.png"
+                alt="Logo do portfólio"
+                class="logo-img"
+              />
+            </a>
+          </div>
+
+          <nav class="nav-desktop">
+            <ul>
+              <li><a href="#home">Início</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
+
+          <button class="btn-menu" id="btn-menu">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-mobile" id="menu-mobile">
+        <button class="btn-close">
+          <i class="bi bi-x-circle-fill"></i>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="overlay" id="overlay-menu"></div>
+    </header>
+
+    <main>
+      <section id="home" class="home-section section">
+        <div class="interface">
+          <div class="flex">
+            <div class="home-content">
+              <div class="title-wrapper">
+                <h1 class="home-title">
+                  <span class="greeting">Olá, </span>
+                  <span class="name">sou Manuella</span>
+                  <span class="dot">.</span>
+                </h1>
+              </div>
+
+              <p class="home-description">
+                <span class="typing-text"></span>
+              </p>
+
+              <div class="tech-stack">
+                <div class="tech-item">Full Stack</div>
+                <div class="tech-item">React</div>
+                <div class="tech-item">Spring</div>
+                <div class="tech-item">Java</div>
+                <div class="tech-item">Cloud Computing</div>
+                <div class="tech-item">Arquitetura de Software</div>
+                <div class="tech-item">Aplicações Web/Mobile</div>
+              </div>
+
+              <div class="btn-contato">
+                <a href="#contact" class="btn-hover-effect">
+                  <button class="btn">
+                    <span>Entre em contato</span>
+                    <div class="btn-icon">
+                      <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                          fill="currentColor"
+                          d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+              </div>
+
+              <div class="social-links">
+                <a href="#" class="social-icon" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="home-image">
+              <div class="image-wrapper">
+                <img
+                  src="./img/minha-logo.png"
+                  alt="Manuella Rodrigues"
+                  class="profile-img"
+                />
+                <div class="glow-effect"></div>
+                <div class="tech-dots">
+                  <div class="dot" style="--i: 1"></div>
+                  <div class="dot" style="--i: 2"></div>
+                  <div class="dot" style="--i: 3"></div>
+                  <div class="dot" style="--i: 4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div class="arrow"></div>
+        </div>
+      </section>
+
+      <section id="skills" class="especialidades">
+        <div class="interface">
+          <h2 class="titulo">
+            MINHAS <span class="titulo-span">ESPECIALIDADES.</span>
+          </h2>
+          <div class="flex">
+            <div class="especialidades-box">
+              <div class="icon-and-title">
+                <i class="fab fa-java java-icon"></i>
+                <h3>Java</h3>
+              </div>
+              <p>
+                Desenvolvimento backend com foco em Arquitetura de
+                Microservices, utilizando Spring Framework. Experiência com
+                JPA/Hibernate, autenticação e segurança, padrões de projeto e
+                integração com bancos SQL e NoSQL.
+              </p>
+            </div>
+
+            <div class="especialidades-box">
+              <i class="fab fa-js js-icon"></i>
+              <h3>JavaScript</h3>
+              <p>
+                Desenvolvimento fullstack utilizando Node.js no backend e React
+                no frontend. Criação de APIs escaláveis, manipulação assíncrona
+                de dados e integração com bancos de dados relacionais e não
+                relacionais.
+              </p>
+            </div>
+
+            <div class="especialidades-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
+                class="typescript-icon"
+              />
+              <h3>TypeScript</h3>
+              <p>
+                Desenvolvimento de aplicações tipadas e escaláveis, aplicando
+                boas práticas em React e Node.js. Experiência com tipagem
+                avançada, interfaces, generics e uso de padrões de design.
+              </p>
+            </div>
+
+            <div class="especialidades-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                alt="Spring"
+                class="spring-icon"
+              />
+              <h3>Spring</h3>
+              <p>
+                Desenvolvimento de APIs RESTful e arquiteturas baseadas em
+                Microservices. Conhecimento em Spring Boot, Spring Security,
+                Spring Data JPA, cache, mensageria e integração com serviços em
+                nuvem.
+              </p>
+            </div>
+
+            <div class="especialidades-box">
+              <i class="fab fa-node node-icon"></i>
+              <h3>Node.js</h3>
+              <p>
+                Criação de APIs eficientes e escaláveis com Express.js e NestJS.
+                Experiência com autenticação JWT, manipulação de bancos de dados
+                SQL/NoSQL, testes automatizados e serviços em nuvem.
+              </p>
+            </div>
+
+            <div class="especialidades-box">
+              <i class="fab fa-react react-icon"></i>
+              <h3>React</h3>
+              <p>
+                Desenvolvimento frontend moderno com React e Next.js.
+                Experiência com componentização, gerenciamento de estado
+                (Redux/Zustand), hooks, otimização de performance e integração
+                com APIs REST/GraphQL.
+              </p>
+            </div>
+
+            <div class="especialidades-box">
+              <i class="fab fa-aws aws-icon"></i>
+              <h3>Amazon Web Services</h3>
+              <p>
+                Experiência com serviços AWS, incluindo EC2, S3, RDS e Lambda.
+                Implementação de deploy automatizado, escalabilidade e
+                monitoramento de aplicações em nuvem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section section">
+        <div class="interface">
+          <div class="flex">
+            <div class="about-image">
+              <img
+                src="./img/manu.jpg"
+                alt="Manuella Rodrigues"
+                class="about-img"
+              />
+            </div>
+            <div class="about-content">
+              <h2 class="about-title">
+                Olá, me chamo <span>Manuella Rodrigues👋</span>
+              </h2>
+              <p>
+                Atualmente sou graduanda em Análise e Desenvolvimento de
+                Sistemas no IFRS e estou estagiando na empresa Compass UOL,
+                participando de um programa de bolsas
+                <span>Front-end Journey (React) - AWS Cloud Context</span>
+              </p>
+              <div class="btn-social">
+                <a href="https://github.com/manuzokas" target="_blank"
+                  ><button><i class="bi-github"></i></button
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/manuella-rodrigues-541a89316/"
+                  target="_blank"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+                <a
+                  href="mailto:manuella.rodrigues.dev@gmail.com"
+                  target="_blank"
+                  ><button><i class="bi bi-envelope"></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section section">
+        <div class="interface">
+          <h2 class="section-title">MEU <span>PORTFÓLIO.</span></h2>
+          <div class="projects-grid">
+            <div
+              class="project-card"
+              style="background-image: url(./img/eshop.png)"
+            >
+              <div class="project-overlay">
+                <h3>Projeto Ecommerce</h3>
+              </div>
+            </div>
+            <div
+              class="project-card"
+              style="background-image: url(./img/nullbank.png)"
+            >
+              <div class="project-overlay">
+                <h3>Projeto NullBank</h3>
+              </div>
+            </div>
+            <div
+              class="project-card"
+              style="background-image: url(./img/plantshop.png)"
+            >
+              <div class="project-overlay">
+                <h3>Projeto PlantPeace</h3>
+              </div>
+            </div>
+            <div
+              class="project-card"
+              style="background-image: url(./img/ecompass-ecommerce.png)"
+            >
+              <div class="project-overlay">
+                <h3>Projeto ECompass</h3>
+              </div>
+            </div>
+            <div
+              class="project-card"
+              style="background-image: url(./img/cyber-ecommerce.png)"
+            >
+              <div class="project-overlay">
+                <h3>Cyber Ecommerce</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section section">
+        <div class="interface">
+          <h2 class="section-title">CONECTE-SE <span>COMIGO.</span></h2>
+
+          <div class="flex contact-container">
+            <div class="contact-info">
+              <h3>Vamos construir algo incrível juntos?</h3>
+              <p>
+                Me encontre nas plataformas abaixo ou envie uma mensagem direta:
+              </p>
+
+              <div class="contact-methods">
+                <a
+                  href="https://wa.me/53991068080"
+                  target="_blank"
+                  class="contact-method whatsapp"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  <span>WhatsApp</span>
+                </a>
+
+                <a
+                  href="https://linkedin.com/in/manuella-rodrigues-541a89316/"
+                  target="_blank"
+                  class="contact-method linkedin"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+
+                <a
+                  href="https://github.com/manuzokas"
+                  target="_blank"
+                  class="contact-method github"
+                >
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+
+                <a
+                  href="mailto:manuella.rodrigues.dev@gmail.com"
+                  class="contact-method email"
+                >
+                  <i class="fas fa-envelope"></i>
+                  <span>Email</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="qr-code-container">
+              <div class="qr-code">
+                <img
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/SEUNUMERO"
+                  alt="QR Code WhatsApp"
+                />
+                <p>Scan para WhatsApp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="interface">
+        <div class="footer-content">
+          <!-- Elemento decorativo animado -->
+          <div class="footer-decoration">
+            <div class="decoration-line"></div>
+            <div class="decoration-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="decoration-line"></div>
+          </div>
+
+          <!-- Copyright -->
+          <div class="footer-copyright">
+            <p>&copy; 2025 Manuella Rodrigues. Todos os direitos reservados.</p>
+          </div>
+
+          <!-- Links úteis sem ser contato -->
+          <div class="footer-links">
+            <a href="#" class="back-to-top">Voltar ao topo ↑</a>
+            <a href="#" class="privacy-policy">Política de Privacidade</a>
+          </div>
+
+          <!-- Redes sociais ou ícone de assinatura -->
+          <div class="footer-signature">
+            <span class="signature-icon">MR</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const typed = new Typed(".typing-text", {
+          strings: [
+            "Full Stack: Front-end (React) e Back-end (Java, Node.js)",
+            "Arquitetura de Software e Design de Sistemas Complexos",
+            "Bancos de Dados: PostgreSQL, MongoDB e Redis",
+            "Cloud Computing: AWS, Azure e Serverless",
+            "APIs Robustas: REST, GraphQL e WebSockets",
+            "Soluções Escaláveis e Alta Disponibilidade",
+          ],
+          typeSpeed: 50,
+          backSpeed: 30,
+          backDelay: 1000,
+          startDelay: 500,
+          loop: true,
+          showCursor: true,
+          cursorChar: "|",
+          smartBackspace: true,
+        });
+      });
+    </script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/contact.js" type="module"></script>
+    <script src="./js/animations.js" type="module"></script>
+  </body>
+</html>

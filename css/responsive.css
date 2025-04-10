@@ -1,0 +1,91 @@
+/* Telas médias (tablets) */
+@media (max-width: 1020px) {
+    .home-section .flex,
+    .about-section .flex {
+        flex-direction: column;
+    }
+    
+    .home-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .about-content {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .btn-social {
+        justify-content: center;
+    }
+    
+    .section-title {
+        font-size: 34px;
+    }
+    
+    .home-title {
+        font-size: 36px;
+    }
+    
+    .about-title {
+        font-size: 36px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-card {
+        padding: 30px 20px;
+    }
+    
+    .project-card {
+        height: 350px;
+    }
+    
+    .home-title {
+        font-size: 30px;
+    }
+    
+    .about-title {
+        font-size: 30px;
+    }
+    
+    .section-title {
+        font-size: 30px;
+    }
+    
+    .contact-methods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Ajustes específicos para telas muito pequenas */
+@media (max-width: 480px) {
+    .home-title,
+    .about-title,
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        height: 300px;
+    }
+}

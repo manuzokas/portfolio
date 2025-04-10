@@ -1,0 +1,152 @@
+header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: linear-gradient(90deg, rgba(70, 166, 21, 0.8), rgba(18, 23, 19, 0.8), rgba(70, 166, 21, 0.8));
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid rgba(56, 255, 1, 0.5);
+}
+
+.interface {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: relative; /* Adicionado para posicionamento absoluto da nav */
+}
+
+.logoheader {
+    flex: 0 0 auto; /* Não cresce, não encolhe, tamanho automático */
+}
+
+.logoheader img {
+    height: 55px;
+    width: auto;
+    margin-top: 5px;
+    transition: transform 0.3s ease;
+}
+
+.logoheader img:hover {
+    transform: scale(1.05);
+}
+
+/* Menu desktop */
+.nav-desktop {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-desktop ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-desktop a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    white-space: nowrap; /* Evita quebra de linha nos links */
+}
+
+.nav-desktop a:hover {
+    background-color: rgba(0, 255, 8, 0.1);
+}
+
+/* Menu mobile */
+.btn-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto; /* Empurra o botão para a direita */
+}
+
+/* Restante do CSS para mobile permanece o mesmo */
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    z-index: 1001;
+    transition: right 0.5s;
+}
+
+.menu-mobile.active {
+    right: 0;
+}
+
+.menu-mobile .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-mobile nav ul {
+    padding: 80px 20px;
+    list-style: none;
+}
+
+.menu-mobile nav a {
+    display: block;
+    padding: 15px;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 255, 8, 0.2);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-desktop {
+        display: none;
+    }
+    
+    .btn-menu {
+        display: block;
+    }
+    
+    .header-content {
+        justify-content: space-between;
+    }
+}
