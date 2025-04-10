@@ -5,7 +5,7 @@ Este repositório contém o código-fonte do meu **portfólio profissional**, de
 
 O portfólio foi construído com tecnologias simples para garantir uma experiência **responsiva, acessível e performática**, além de facilitar a exposição do meu trabalho de forma elegante e interativa, sem complexidade.
 
-🔗 **Acesso ao Portfólio:** [Link do Deploy]  
+🔗 **Acesso ao Portfólio:** https://manuzokas.github.io/portfolio/
 
 ---
 
