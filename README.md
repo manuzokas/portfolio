@@ -3,7 +3,7 @@
 ## **📌 Visão Geral**  
 Este repositório contém o código-fonte do meu **portfólio profissional**, desenvolvido para destacar minhas habilidades, projetos e experiência como **Desenvolvedora Full Stack**.  
 
-O portfólio foi construído com tecnologias modernas para garantir uma experiência **responsiva, acessível e performática**, além de facilitar a exposição do meu trabalho de forma elegante e interativa.  
+O portfólio foi construído com tecnologias simples para garantir uma experiência **responsiva, acessível e performática**, além de facilitar a exposição do meu trabalho de forma elegante e interativa, sem complexidade.
 
 🔗 **Acesso ao Portfólio:** [Link do Deploy]  
 
