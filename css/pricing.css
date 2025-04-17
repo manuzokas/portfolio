@@ -1,0 +1,172 @@
+.pricing-section {
+  padding: 100px 0;
+  background: linear-gradient(to bottom right, #080808, #0e0f1a);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.section-title span {
+  color:rgb(0, 255, 47);
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.pricing-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 255, 204, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(0, 255, 30, 0.2);
+}
+
+.pricing-card.destaque {
+  border: 2px solidrgb(0, 255, 17);
+  box-shadow: 0 0 30px rgba(10, 175, 18, 0.74);
+}
+
+.pricing-card h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2.2rem;
+  color:rgb(9, 255, 0);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.price::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background:rgb(0, 255, 0);
+  margin: 10px auto 0;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.pricing-card ul li {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  padding: 0.6rem 0;
+  position: relative;
+}
+
+.pricing-card ul li::before {
+  content: "✓";
+  color:rgb(0, 255, 26);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.btn-contact {
+  background:rgb(0, 255, 30);
+  color: #000;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  width: 100%;
+  box-shadow: 0 0 20px rgb(0, 255, 26);
+}
+
+.btn-contact:hover {
+  background: #0f0;
+  color: black;
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px #0f0;
+}
+
+@media (max-width: 768px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pricing-card.personalizado {
+  background: linear-gradient(145deg, rgba(0, 255, 102, 0.05), rgba(0, 255, 51, 0.02));
+  border: 1px dashed rgba(0, 255, 47, 0.6);
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  margin-top: 50px;
+}
+
+.pricing-card.personalizado:hover {
+  background: rgba(0, 255, 51, 0.03);
+  box-shadow: 0 0 25px rgba(0, 255, 51, 0.15);
+  transform: translateY(-8px);
+}
+
+.custom-icon {
+  font-size: 2.5rem;
+  color: rgb(246, 255, 0);
+  margin-bottom: 1.2rem;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+.custom-text {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 1.5rem 0 2.2rem;
+  line-height: 1.6;
+}
+
+.btn-contact-outline {
+  background: transparent;
+  border: 2px solid rgb(0, 255, 47);
+  color: rgb(0, 255, 47);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-decoration: none;
+}
+
+.btn-contact-outline:hover {
+  background: rgb(0, 255, 47);
+  color: #000;
+  box-shadow: 0 0 20px rgb(0, 255, 47);
+  transform: translateY(-3px);
+}

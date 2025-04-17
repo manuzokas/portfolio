@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/experience.css" />
+    <link rel="stylesheet" href="./css/certificates.css" />
+    <link rel="stylesheet" href="./css/pricing.css" />
   </head>
   <body>
     <header id="header">
@@ -84,6 +87,17 @@
 
     <main>
       <section id="home" class="home-section section">
+        <div
+          id="code-particles"
+          style="
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+          "
+        ></div>
         <div class="interface">
           <div class="flex">
             <div class="home-content">
@@ -260,40 +274,125 @@
 
       <section id="about" class="about-section section">
         <div class="interface">
-          <div class="flex">
+          <div class="flex about-wrapper">
             <div class="about-image">
-              <img
-                src="./img/manu.jpg"
-                alt="Manuella Rodrigues"
-                class="about-img"
-              />
+              <div class="glow-frame">
+                <img
+                  src="./img/manu.jpg"
+                  alt="Manuella Rodrigues"
+                  class="about-img"
+                />
+              </div>
             </div>
             <div class="about-content">
               <h2 class="about-title">
-                Olá, me chamo <span>Manuella Rodrigues👋</span>
+                Olá, me chamo <span>Manuella Rodrigues 👾</span>
               </h2>
               <p>
                 Atualmente sou graduanda em Análise e Desenvolvimento de
-                Sistemas no IFRS e estou estagiando na empresa Compass UOL,
-                participando de um programa de bolsas
-                <span>Front-end Journey (React) - AWS Cloud Context</span>
+                Sistemas no IFRS e estou estagiando na Compass UOL, participando
+                do programa <span>Front-end Journey (React)</span> com foco em
+                <span>AWS Cloud Context</span>.
               </p>
+
               <div class="btn-social">
-                <a href="https://github.com/manuzokas" target="_blank"
-                  ><button><i class="bi-github"></i></button
-                ></a>
+                <a href="https://github.com/manuzokas" target="_blank">
+                  <button><i class="bi bi-github"></i></button>
+                </a>
                 <a
                   href="https://www.linkedin.com/in/manuella-rodrigues-541a89316/"
                   target="_blank"
-                  ><button><i class="bi bi-linkedin"></i></button
-                ></a>
+                >
+                  <button><i class="bi bi-linkedin"></i></button>
+                </a>
                 <a
                   href="mailto:manuella.rodrigues.dev@gmail.com"
                   target="_blank"
-                  ><button><i class="bi bi-envelope"></i></button
-                ></a>
+                >
+                  <button><i class="bi bi-envelope"></i></button>
+                </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience-section section">
+        <div class="interface">
+          <h2 class="section-title">MINHA <span>JORNADA.</span></h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Compass UOL <span>2024 - Atual</span></h3>
+                <p>Front-end Developer (React) - AWS Cloud Context</p>
+                <ul class="timeline-skills">
+                  <li>React</li>
+                  <li>AWS</li>
+                  <li>TypeScript</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>IFRS <span>2022 - 2025</span></h3>
+                <p>Graduação em Análise e Desenvolvimento de Sistemas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="certificates-section section">
+        <div class="interface">
+          <h2 class="section-title">MEUS <span>CERTIFICADOS</span></h2>
+
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="destaque">
+              🏅 Destaques
+            </button>
+            <button class="filter-btn" data-filter="udemy">📚 Udemy</button>
+            <button class="filter-btn" data-filter="academico">
+              📖 Acadêmico
+            </button>
+          </div>
+
+          <div class="certificates-grid">
+            <!-- certificado do exam cloud pratitioner -->
+            <div class="certificate-card destaque">
+              <img
+                src="https://media.istockphoto.com/id/1444320417/vector/video-coming-soon-loading-page-no-video-clip-no-footage-available-vector-illustration.jpg?s=612x612&w=0&k=20&c=dM4cOuEAk7BeXRUaXVXrjnbQP_ICYApTNEuakORESd0="
+                alt="AWS Certified"
+              />
+              <div class="certificate-hover">
+                <h3>AWS Cloud Practitioner</h3>
+                <a href="#" class="view-certificate">Ver credencial</a>
+              </div>
+            </div>
+
+            <!-- certificado do git e github -->
+            <div class="certificate-card udemy">
+              <img src="../img/git-github-bootcamp.png" alt="React Udemy" />
+              <div class="certificate-hover">
+                <h3>Bootcamp Git e Github</h3>
+                <a href="#" class="view-certificate">Ver credencial</a>
+              </div>
+            </div>
+
+            <!-- certificado masteriyng typescript -->
+            <div class="certificate-card udemy">
+              <img src="../img/git-github-bootcamp.png" alt="React Udemy" />
+              <div class="certificate-hover">
+                <h3>Mastering Typescript</h3>
+                <a href="#" class="view-certificate">Ver credencial</a>
+              </div>
+            </div>
+
+            <!-- Outros cards com classes: destaque, udemy, academico -->
           </div>
         </div>
       </section>
@@ -342,6 +441,62 @@
                 <h3>Cyber Ecommerce</h3>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing-section section">
+        <div class="interface">
+          <h2 class="section-title">SOLUÇÕES <span>PERSONALIZADAS</span></h2>
+
+          <div class="pricing-cards">
+            <div class="pricing-card">
+              <h3>Landing Page</h3>
+              <div class="price">R$ 1.500</div>
+              <ul>
+                <li>Design Responsivo</li>
+                <li>SEO Básico</li>
+              </ul>
+              <button class="btn-contact">Solicitar</button>
+            </div>
+
+            <div class="pricing-card destaque">
+              <h3>Site Completo</h3>
+              <div class="price">R$ 3.000</div>
+              <ul>
+                <li>Até 5 páginas</li>
+                <li>Formulário de contato</li>
+                <li>Responsivo + SEO</li>
+              </ul>
+              <button class="btn-contact">Solicitar</button>
+            </div>
+
+            <div class="pricing-card">
+              <h3>Landing + Integrações</h3>
+              <div class="price">R$ 2.000</div>
+              <ul>
+                <li>API + WhatsApp + Analytics</li>
+                <li>Performance otimizada</li>
+              </ul>
+              <button class="btn-contact">Solicitar</button>
+            </div>
+          </div>
+          <div class="pricing-card personalizado">
+            <div class="custom-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Orçamento Personalizado</h3>
+            <p class="custom-text">
+              Tem uma ideia única? Precisa de algo além dos pacotes padrões?<br />
+              Vamos montar algo sob medida pra você.
+            </p>
+            <a
+              href="https://wa.me/53991068080"
+              target="_blank"
+              class="btn-contact-outline"
+            >
+              Solicitar orçamento
+            </a>
           </div>
         </div>
       </section>
@@ -448,11 +603,11 @@
       document.addEventListener("DOMContentLoaded", () => {
         const typed = new Typed(".typing-text", {
           strings: [
-            "Full Stack: Front-end (React) e Back-end (Java, Node.js)",
+            "Full Stack: Front-end (React + TS, React Native) e Back-end (Java, Node.js)",
             "Arquitetura de Software e Design de Sistemas Complexos",
             "Bancos de Dados: PostgreSQL, MongoDB e Redis",
-            "Cloud Computing: AWS, Azure e Serverless",
-            "APIs Robustas: REST, GraphQL e WebSockets",
+            "Cloud Computing: AWS",
+            "APIs Robustas: REST",
             "Soluções Escaláveis e Alta Disponibilidade",
           ],
           typeSpeed: 50,
@@ -470,5 +625,9 @@
     <script src="./js/menu.js" type="module"></script>
     <script src="./js/contact.js" type="module"></script>
     <script src="./js/animations.js" type="module"></script>
+    <script src="./js/experience.js" type="module"></script>
+    <script src="./js/certification.js" type="module"></script>
+    <script src="./js/particles.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   </body>
 </html>
